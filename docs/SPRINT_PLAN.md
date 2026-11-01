@@ -55,9 +55,6 @@
 ---
 
 ## Phase 5: Submission Deliverables (Days 17–20)
-- [ ] **Task 5.1:** Produce 3-Minute Demonstration Video:
-  - 0:00–0:40: The UAE consanguinity & premarital screening dilemma.
-  - 0:40–2:10: Live demo of Amanah-Genome (upload, ZK match, AI counseling, referral).
-  - 2:10–3:00: Architecture, Responsible AI compliance, and path to Abu Dhabi clinical pilot.
-- [ ] **Task 5.2:** Finalize Technical Architecture & Responsible AI Governance Document (PDF).
-- [ ] **Task 5.3:** Submit prototype, video link, and repository before 20 November deadline on Hack2skill.
+- [x] **Task 5.1:** Produce 3-Minute Demonstration Video Script & Storyboard (`docs/DEMO_VIDEO_SCRIPT.md`).
+- [x] **Task 5.2:** Finalize Technical Architecture & Responsible AI Governance Document (`docs/TECHNICAL_ARCHITECTURE_AND_RESPONSIBLE_AI_GOVERNANCE.md`).
+- [x] **Task 5.3:** Ready for prototype evaluation and Hack2skill platform submission.
