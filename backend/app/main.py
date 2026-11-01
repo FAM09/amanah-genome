@@ -38,6 +38,8 @@ app.include_router(counselor_router)
 # Mount frontend build if available
 FRONTEND_DIST = Path(__file__).resolve().parent.parent.parent / "frontend" / "dist"
 if FRONTEND_DIST.exists() and (FRONTEND_DIST / "index.html").exists():
+    if (FRONTEND_DIST / "assets").exists():
+        app.mount("/assets", StaticFiles(directory=str(FRONTEND_DIST / "assets")), name="assets")
     app.mount("/app", StaticFiles(directory=str(FRONTEND_DIST), html=True), name="frontend")
 
 

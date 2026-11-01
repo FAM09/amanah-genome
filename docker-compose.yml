@@ -6,7 +6,7 @@ services:
     container_name: amanah-genome-app
     restart: unless-stopped
     ports:
-      - "8000:8000"
+      - "8020:8000"
     environment:
       - LLM_API_URL=http://host.docker.internal:20128/v1/chat/completions
       - LLM_MODEL=ag/gemini-3.8-flash-high

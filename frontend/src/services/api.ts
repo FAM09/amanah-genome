@@ -6,7 +6,11 @@ import type {
   UploadReceipt,
 } from '../types';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_BASE =
+  import.meta.env.VITE_API_URL ||
+  (typeof window !== 'undefined' && (window.location.port === '8020' || window.location.pathname.startsWith('/app'))
+    ? ''
+    : 'http://localhost:8020');
 
 export async function initSession(): Promise<SessionInitResponse> {
   const res = await fetch(`${API_BASE}/api/session/init`, { method: 'POST' });
