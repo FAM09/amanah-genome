@@ -4,8 +4,10 @@ Zero-Knowledge Pre-Marital Genetic Compatibility & Cultural Care Bridge.
 Target: Future Health Digital Innovation Challenge 2026 (Abu Dhabi - GITEX 2026).
 """
 
+from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from app.api.routes_counselor import router as counselor_router
 from app.api.routes_session import router as session_router
@@ -32,6 +34,12 @@ app.add_middleware(
 # Mount Routers
 app.include_router(session_router)
 app.include_router(counselor_router)
+
+# Mount frontend build if available
+FRONTEND_DIST = Path(__file__).resolve().parent.parent.parent / "frontend" / "dist"
+if FRONTEND_DIST.exists() and (FRONTEND_DIST / "index.html").exists():
+    app.mount("/app", StaticFiles(directory=str(FRONTEND_DIST), html=True), name="frontend")
+
 
 
 @app.get("/")
