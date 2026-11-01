@@ -171,6 +171,26 @@ Test all clinical scenarios instantly via pre-configured files or UI demo pills:
 
 ---
 
+## 🗺️ Strategic Future Roadmap: Abu Dhabi Pilot & Regional Scaling
+
+```
+[ PHASE 1: Q1–Q2 2027 ] ──► [ PHASE 2: Q3–Q4 2027 ] ──► [ PHASE 3: 2028 ] ──► [ PHASE 4: 2028+ ]
+• Malaffi HIE (FHIR)        • Client-Side Wasm         • GCC-Wide Federation       • Polygenic Risk (PRS)
+• UAE Pass Auth             • zk-SNARK Verifiable      • B2B IVF SaaS              • Pharmacogenomics
+• SEHA Clinical Pilot         Credentials (Circom)     • Cross-border Screening     • Prenatal Care
+```
+
+* **Phase 1 (Q1–Q2 2027) — National Health Integration (Malaffi & UAE Pass):**  
+  Deploy standardized **HL7 FHIR v4.0** connectors to bridge Amanah-Genome directly into **Malaffi** (Abu Dhabi’s centralized Health Information Exchange) and authenticate couples via **UAE Pass**, initiating a 500-couple clinical pilot across SEHA, Cleveland Clinic Abu Dhabi, and Burjeel Medical City.
+* **Phase 2 (Q3–Q4 2027) — Zero-Cloud Client-Side WebAssembly & zk-SNARKs:**  
+  Port core bio-crypto parsers to in-browser **Rust/Wasm** so zero genomic bytes ever leave the user's local hardware. Issue succinct **zk-SNARK verifiable credentials (Circom/Halo2)** for official judicial premarital courts.
+* **Phase 3 (2028) — GCC Regional Expansion & Commercial IVF SaaS:**  
+  Federate panel registries across the GCC (**Saudi Vision 2030 Premarital Program**, Qatar, Kuwait, Oman, Bahrain) and license B2B intake APIs to regional IVF/PGT-M fertility networks.
+* **Phase 4 (2028+) — Multifactorial Polygenic Risk & Pediatric Pharmacogenomics:**  
+  Voluntary post-marital screening for cardiometabolic disorders (Type 2 Diabetes, CAD) and preemptive neonatal drug-metabolism typing.
+
+---
+
 ## 📑 Submission Whitepapers & Video Script
 
 * **Technical Architecture & Responsible AI Governance:** [`docs/TECHNICAL_ARCHITECTURE_AND_RESPONSIBLE_AI_GOVERNANCE.md`](docs/TECHNICAL_ARCHITECTURE_AND_RESPONSIBLE_AI_GOVERNANCE.md)  
